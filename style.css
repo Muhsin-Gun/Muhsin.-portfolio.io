@@ -4,7 +4,10 @@ body {
     padding: 0;
     background: linear-gradient(to bottom right, #7cf03d, #000000);
     color: white;
+    box-sizing: border-box;
+    min-height: 100vh;
   }
+  
   
   .container {
     max-width: 1200px;
@@ -19,7 +22,8 @@ body {
   
   .custom-nav {
     background-color: #7cf03d;
-    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
     position: fixed;
     width: 100%;
     top: 0;
