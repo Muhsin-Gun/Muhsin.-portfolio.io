@@ -102,7 +102,7 @@ nav {
 }
 
 .about-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -119,12 +119,25 @@ nav {
   font-size: 1.1rem;
   color: peru;
   text-align: left;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .about-list {
   list-style-type: disc;
-  padding-left: 0rem;
+  padding-left: 1.5rem;
   margin-top: 1rem;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .about-content > * {
+    flex: 1;
+  }
 }
 
 
