@@ -67,15 +67,50 @@ nav {
   letter-spacing: 5px;
   color: peru;
 }
+@media (max-width: 995px) {
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid peachpuff;
+    border-bottom: 3px solid peachpuff;
+    background: linear-gradient(to bottom right, peru, peachpuff);
+    border-top: 0.1rem solid peru;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    z-index: 1000;
+    list-style: none;
+  }
 
+  .nav-menu.show {
+    display: flex;
+  }
 
-.main-content {
-  margin-top: 70px;
+  .nav-menu li a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: white; /* Default color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease;
+  }
+
+  .nav-menu li a:hover,
+  .nav-menu li a.active {
+    color: peachpuff; /* Hover color */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid peru;
+    text-decoration: none; /* Still no underline */
+  }
 }
 
 
 .hire-btn {
-    background-color: peachpuff;
+    background-color: rgb(82, 61, 43);
     color: white;
     padding: 0.75rem 1.5rem; 
     border-radius: 9999px;    
