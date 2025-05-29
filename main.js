@@ -1,6 +1,7 @@
-const navToggle = document.getElementById('navToggle');
 const navMenu = document.querySelector('.nav-menu');
 
-navToggle.addEventListener('click', function() {
-    navMenu.classList.toggle('show');
-});
+function ontogglemenu(e) {
+  e.name = e.name === 'menu' ? 'close' : 'menu';
+  navMenu.classList.toggle('show-menu');
+}
+

@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -67,46 +67,7 @@ nav {
   letter-spacing: 5px;
   color: peru;
 }
-@media (max-width: 995px) {
-  .nav-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 40%;
-    border-left: 3px solid peachpuff;
-    border-bottom: 3px solid peachpuff;
-    background: linear-gradient(to bottom right, peru, peachpuff);
-    border-top: 0.1rem solid peru;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 0;
-    z-index: 1000;
-    list-style: none;
-  }
 
-  .nav-menu.show {
-    display: flex;
-  }
-
-  .nav-menu li a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-    color: white; /* Default color */
-    text-decoration: none; /* No underline */
-    transition: color 0.3s ease;
-  }
-
-  .nav-menu li a:hover,
-  .nav-menu li a.active {
-    color: peachpuff; /* Hover color */
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border-bottom: 0.5rem solid peru;
-    text-decoration: none; /* Still no underline */
-  }
-}
 
 
 .hire-btn {
@@ -175,6 +136,77 @@ nav {
   }
 }
 
+.projects-section {
+  padding: 80px 0;
+  background-color: rgb(242, 226, 212) ;
+  color: peru;
+  animation: fadeIn 1s ease-in;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: 'Georgia', serif; 
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color:transparent;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 24px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.project-desc {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
