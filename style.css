@@ -138,7 +138,7 @@ nav {
 
 .projects-section {
   padding: 80px 0;
-  background-color: rgb(242, 226, 212) ;
+  background-color: linear-gradient(to bottom right, peachpuff, #e0e0e0);
   color: peru;
   animation: fadeIn 1s ease-in;
 }
@@ -208,6 +208,96 @@ nav {
   }
 }
 
+/* contact.css */
+.contact-section {
+  padding: 5rem 0;
+  background-color: linear-gradient(to bottom right, peachpuff, #e0e0e0);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Georgia', serif;
+  position: relative;
+  color: #b87333;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #b87333;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: peru;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: peru;
+  color: black;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #b87333;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  color: peru;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: peachpuff;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
